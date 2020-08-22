@@ -7,6 +7,7 @@
     <Hello
      :msg="msg"
      :msg2="'hhhhhh'"
+     @chikButtonClick="increase"
     />
     <button @click="increase">{{ count }}</button>
   </div>
