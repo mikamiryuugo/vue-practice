@@ -8,6 +8,7 @@
      :msg="msg"
      :msg2="'hhhhhh'"
     />
+    <button @click="increase">{{ count }}</button>
   </div>
 </template>
 
@@ -24,7 +25,13 @@ export default {
         { id: 1, text: 'hoge' },
         { id: 2, text: 'hooo' }
       ],
-      msg: 'msgHello'
+      msg: 'msgHello',
+      count: 0
+    }
+  },
+  methods: {
+    increase () {
+      this.count = this.count + 1
     }
   }
 }
