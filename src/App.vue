@@ -4,7 +4,10 @@
       <li v-for="todo in todos" :key="todo.id">
       {{ todo.text }}
     </li>
-    <Hello />
+    <Hello
+     :msg="msg"
+     :msg2="'hhhhhh'"
+    />
   </div>
 </template>
 
@@ -20,7 +23,8 @@ export default {
       todos: [
         { id: 1, text: 'hoge' },
         { id: 2, text: 'hooo' }
-      ]
+      ],
+      msg: 'msgHello'
     }
   }
 }
